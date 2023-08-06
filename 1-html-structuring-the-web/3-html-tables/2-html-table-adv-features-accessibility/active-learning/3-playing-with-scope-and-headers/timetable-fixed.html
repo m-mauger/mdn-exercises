@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>School timetable</title>
+    <style>
+    html {
+      font-family: sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(200,200,200);
+      letter-spacing: 1px;
+      font-size: 0.8rem;
+    }
+
+    td, th {
+      border: 1px solid rgb(190,190,190);
+      padding: 10px 20px;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    caption {
+      padding: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>School timetable</h1>
+
+    <table>
+      <caption>Teaching Schedule</caption>
+      <colgroup>
+        <col span="2">
+        <col style="background-color:#97DB9A;">
+        <col style="width:42px;">
+        <col style="background-color:#97DB9A;">
+        <col style="background-color:#DCC48E; border:4px solid #C1437A;">
+        <col span="2" style="width:42px;">
+      </colgroup>
+      <tr>
+        <td>&nbsp;</td>
+        <th id="monday">Mon</th>
+        <th id="tuesday">Tues</th>
+        <th id="wednesday">Wed</th>
+        <th id="thursday">Thurs</th>
+        <th id="friday">Fri</th>
+        <th id="saturday">Sat</th>
+        <th id="sunday">Sun</th>
+      </tr>
+      <tr>
+        <th id="1stperiod">1st period</th>
+        <td headers="monday 1stperiod">English</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td headers="thursday 1stperiod">German</td>
+        <td headers="friday 1stperiod">Dutch</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th id="2ndperiod">2nd period</th>
+        <td headers="monday 2ndperiod">English</td>
+        <td headers="tuesday 2ndperiod">English</td>
+        <td>&nbsp;</td>
+        <td headers="thursday 2ndperiod">German</td>
+        <td headers="friday 2ndperiod">Dutch</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th id="3rdperiod">3rd period</th>
+        <td>&nbsp;</td>
+        <td headers="tuesday 3rdperiod">German</td>
+        <td>&nbsp;</td>
+        <td headers="thursday 3rdperiod">German</td>
+        <td headers="friday 3rdperiod">Dutch</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th id="4thperiod">4th period</th>
+        <td>&nbsp;</td>
+        <td headers="tuesday 4thperiod">English</td>
+        <td>&nbsp;</td>
+        <td headers="thursday 4thperiod">English</td>
+        <td headers="friday 4thperiod">Dutch</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+
+
+  </body>
+</html>

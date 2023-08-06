@@ -1,0 +1,56 @@
+/* Selecting elements based on the element name - targeting an element selector*/
+h1 {
+    color: red;
+}
+
+p, li {
+    color: green;
+}
+
+/* Changing the default behavior of elements */
+li {
+    list-style-type: square;
+}
+
+/* Selecting elements based on class - any element that has a class of different*/
+.different {
+    color: brown;
+}
+
+    /* This syntax means target an <li> element that has a class of special */
+li.special, span.special {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Styling things based on their location in the document */
+    /* descendent combinator - selects any <em> element that is inside (a descendent of) an <li> */
+li em {
+    color: rebeccapurple;
+}
+
+    /* adjacent sibling combinator - styles a paragraph when it comes directly after a heading at the same hierchy leven in the HTML */
+h1 + p {
+    font-size: 200%;
+}
+
+/*Styling things based on state*/
+a:link {
+    color: royalblue;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Combining selectors and combinators */
+body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
